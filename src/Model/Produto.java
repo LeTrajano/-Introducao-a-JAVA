@@ -57,4 +57,14 @@ public class Produto {
     public void setFornecedor(Fornecedores fornecedores) {
         this.fornecedores = fornecedores;
     }
+    
+    public void mostrarProduto() {
+        System.out.println("Código: " + codigo);
+        System.out.println("Nome: " + nome);
+        System.out.println("Valor: " + valor);
+        System.out.println("Fornecedor: " + fornecedores.getNome());
+        System.out.println("CNPJ do fornecedor: " + fornecedores.getCnpj());
+        System.out.println("Telefone do fornecedor: " + fornecedores.getTelefone());
+    }
+
 }

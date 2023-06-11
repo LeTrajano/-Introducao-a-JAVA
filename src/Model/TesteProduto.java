@@ -11,25 +11,17 @@ public class TesteProduto {
 	       Produto produto2 = new Produto(2, "notebook", 2000.00f, fornecedor2);
 	       Produto produto3 = new Produto(3, "Impressora", 232.00f, fornecedor2);
 	        
-	        System.out.println("Produto 1:");
-	        System.out.println("Código: " + produto1.getCodigo());
-	        System.out.println("Nome: " + produto1.getNome());
-	        System.out.println("Valor: " + produto1.getValor());
-	        System.out.println("Fornecedor: " + produto1.getFornecedor().getNome());
-	        System.out.println("CNPJ do Fornecedor: " + produto1.getFornecedor().getCnpj());
+	        produto1.atualizarPreco(12.0f); 
+	        produto1.mostrarProduto();
 	        
-	        System.out.println("\nProduto 2:");
-	        System.out.println("Código: " + produto2.getCodigo());
-	        System.out.println("Nome: " + produto2.getNome());
-	        System.out.println("Valor: " + produto2.getValor());
-	        System.out.println("Fornecedor: " + produto2.getFornecedor().getNome());
-	        System.out.println("CNPJ do Fornecedor: " + produto2.getFornecedor().getCnpj());
+	        System.out.println();
 	        
-	        System.out.println("\nProduto 3:");
-	        System.out.println("Código: " + produto3.getCodigo());
-	        System.out.println("Nome: " + produto3.getNome());
-	        System.out.println("Valor: " + produto3.getValor());
-	        System.out.println("Fornecedor: " + produto3.getFornecedor().getNome());
-	        System.out.println("CNPJ do Fornecedor: " + produto3.getFornecedor().getCnpj());
+	        produto2.atualizarPreco(10.0f); 
+	        produto2.mostrarProduto();
+	        
+	        System.out.println();
+	        
+	        produto3.atualizarPreco(5.0f);
+	        produto3.mostrarProduto();
 	    }
 	}
